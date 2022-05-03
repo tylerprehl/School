@@ -1,0 +1,7 @@
+	public boolean visit(TypeDeclaration node) {
+		
+		System.out.println("Current class: " +node.getName().getIdentifier() + " has parent: " 
+		                   + node.resolveBinding().getSuperclass().getName());
+		
+		return true;
+	}

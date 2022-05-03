@@ -1,0 +1,53 @@
+Why Getters and Setters ?
+
+*****
+Note1:
+*****
+
+Getters and setters are for external users of your API
+
+Of course a class can access their internal state and change it as necessary.
+They don't need to go through a setter.
+The pattern is designed as a defensive measure for external users of your code.
+
+
+Ideally, the getter provides a clone of the internal state and
+the setter provides validation to ensure that valid internal state is maintained.
+
+*****
+Note2:
+*****
+What's the advantage of using getters and setters - that only get and set -
+instead of simply using public fields for those variables?
+
+If getters and setters are ever doing more than just the simple get/set,
+I can figure this one out very quickly, but I'm not 100% clear on how:
+
+public String foo;
+is any worse than:
+
+private String foo;
+public void setFoo(String foo) { this.foo = foo; }
+public String getFoo() { return foo; }
+
+
+(1) Because 2 weeks (months, years) from now when you realize that your setter
+    needs to do more than just set the value,
+    you'll also realize that the property has been used directly in 238 other classes :-)
+
+
+(2) There are many reasons.
+    My favorite one is when you need to change the behavior or regulate what you can
+    set on a variable. For instance, lets say you had a setSpeed(int speed) method.
+    But you want that you can only set a maximum speed of 100. You would do something like:
+
+public void setSpeed(int speed) {
+  if ( speed > 100 ) {
+    this.speed = 100;
+  } else {
+    this.speed = speed;
+  }
+}
+Now what if EVERYWHERE in your code you were using the public field and then you
+realized you need the above requirement?
+Have fun changing every usage of the public field instead of just modifying your setter.

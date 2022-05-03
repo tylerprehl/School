@@ -1,0 +1,7 @@
+version: "2"
+
+services:
+  rng:
+    build: rng
+    ports:
+    - "8001:80"

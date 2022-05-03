@@ -1,0 +1,18 @@
+ant -f "G:\\My Drive\\a WCU Winter 20-21\\Lab04\\OldMacDonald" -Dnb.internal.action.name=run run
+init:
+Deleting: G:\My Drive\a WCU Winter 20-21\Lab04\OldMacDonald\build\built-jar.properties
+deps-jar:
+Updating property file: G:\My Drive\a WCU Winter 20-21\Lab04\OldMacDonald\build\built-jar.properties
+compile:
+run:
+cow goes moo
+chick goes cheep
+dog goes woof
+cow goes moo
+chirp
+cheep
+cheep
+cheep
+chirp
+Betsy
+BUILD SUCCESSFUL (total time: 0 seconds)

@@ -1,0 +1,7 @@
+version: "2"
+
+services:
+  hasher:
+    build: hasher
+    ports:
+    - "8002:80"

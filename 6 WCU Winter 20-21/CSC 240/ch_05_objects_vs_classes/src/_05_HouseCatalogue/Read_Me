@@ -1,0 +1,10 @@
+What you need to master from each sub-package
+*********************************************
+
+1. Precondition and Postcondition
+    - Precondition: states a method requirements.
+    - Postcondition: states a method effect.
+
+2. Public vs. Private instance variables
+    - declare all class variables private
+    - public class variables lead to inconsistency

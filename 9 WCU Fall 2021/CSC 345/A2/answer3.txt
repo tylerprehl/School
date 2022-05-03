@@ -1,0 +1,7 @@
+Next token is: 25, Next lexeme is (
+Next token is: 11, Next lexeme is b12313
+Next token is: 21, Next lexeme is +
+Next token is: 10, Next lexeme is 231231
+Next token is: 25, Next lexeme is (
+Next token is: 11, Next lexeme is kljdsflkjsf1213123
+Next token is: -1, Next lexeme is ?

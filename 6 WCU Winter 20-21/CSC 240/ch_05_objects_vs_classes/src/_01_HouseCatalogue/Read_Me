@@ -1,0 +1,14 @@
+What you need to master from each sub-package
+*********************************************
+
+1. Class files and separate compilation
+    - Be careful both House.java and House_Catalogue_01.java should be on the same package:
+        - Running : House_Catalogue_01.java (The one you should run).
+        - Implementation: House.java (The one has the details).
+
+** Note: for exercise: Run House.java and see what happens.
+
+2. Instance Variables
+    - belong to a class
+
+3. We create (instantiate) objects using the new keyword inside main ().
