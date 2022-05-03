@@ -1,4 +1,4 @@
-# Tyler Prehl - School
+# Tyler Prehl - West Chester University
 This repository serves as a "dropbox" of all my Computer Science-related school materials.
 
 Classes of Note:
